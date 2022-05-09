@@ -3,7 +3,7 @@ import time
 
 me = Tello()
 me.connect()
-print(me.get_battery())  # 배터리 잔량 확인 가능
+print(me.get_battery())  # 배터리 잔량 확인
 
 me.takeoff()  # 기체 이륙
 time.sleep(1)

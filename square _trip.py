@@ -8,7 +8,7 @@ print(f"temperature: {tello.get_temperature()}°C")  # 드론 온도 출력
 
 tello.takeoff()
 
-SHORT_DISTANCE = 150
+SHORT_DISTANCE = 140
 LONG_DISTANCE = 400
 
 for i in range(2):
@@ -23,7 +23,9 @@ for i in range(2):
     print("우측으로 90도 회전")
     tello.rotate_clockwise(90)
 
+tello.move_back(17)
 tello.rotate_clockwise(360)
 tello.flip_forward()  # 전방으로 플립
+tello.move_left(3)
 
 tello.land()

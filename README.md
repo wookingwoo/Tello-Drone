@@ -1,4 +1,4 @@
-# Tello-drone
+# Tello-Drone
 
 ## Installation
 ```bash
